@@ -1,0 +1,14 @@
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ],
+  "ConnString": "Data Source=(localdb)\\MSSQLLocalDB; Initial Catalog=MyChat; Integrated Security=SSPI;",
+  "Address": "239.0.0.100",
+  "LocalPort": "8888",
+  "RemotePort": "8888"
+}
