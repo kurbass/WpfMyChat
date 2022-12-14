@@ -1,11 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Win32;
 using MyChat.Infrastructure;
 using MyChat.Model;
 using MyChat.Properties;
-using Newtonsoft.Json.Linq;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Net;
 using System.Net.Sockets;
@@ -13,9 +10,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.Json;
 using System.Threading;
-using System.Timers;
 using System.Windows;
-using System.Windows.Controls;
 
 namespace MyChat.ViewModel
 {
@@ -93,7 +88,7 @@ namespace MyChat.ViewModel
             {
                 if (value != _tbMessage)
                 {
-                    _tbMessage = value;
+                    _tbMessage = value.Trim();
                     OnPropertyChanged();
                 }
             }

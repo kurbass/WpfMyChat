@@ -22,12 +22,12 @@
                 <ColumnDefinition Width="100"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <TextBox Text="{Binding TbMessage, UpdateSourceTrigger=PropertyChanged}"
-                 VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" FontSize="16"  Style="{DynamicResource tbStyle}"></TextBox>
+                 VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" FontSize="16"  Style="{DynamicResource tbStyle}"></TextBox>
             <Button Grid.Column="1" FontSize="20" Command="{Binding SendCommand}" Style="{DynamicResource btnStyle}">Send</Button>
         </Grid>
         <Label VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="22" Content="{Binding User}" Style="{DynamicResource lblStyle}"></Label>
         <Button Grid.Row="0" FontSize="20" HorizontalAlignment="Left" Command="{Binding ChangeStyleCommand}" Style="{DynamicResource btnStyle}">Change theme</Button>
         <TextBox Grid.Row="1" IsReadOnly="True" Text="{Binding TbChat}"
-                 VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" FontSize="16"  Style="{DynamicResource tbStyle}"></TextBox>
+                 VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" FontSize="16"  Style="{DynamicResource tbStyle}"></TextBox>
     </Grid>
 </Window>
