@@ -21,7 +21,7 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition Width="100"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <TextBox Text="{Binding TbMessage, UpdateSourceTrigger=PropertyChanged}"
+            <TextBox Text="{Binding TbMessage}"
                  VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" FontSize="16"  Style="{DynamicResource tbStyle}"></TextBox>
             <Button Grid.Column="1" FontSize="20" Command="{Binding SendCommand}" Style="{DynamicResource btnStyle}">Send</Button>
         </Grid>

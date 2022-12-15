@@ -88,7 +88,7 @@ namespace MyChat.ViewModel
             {
                 if (value != _tbMessage)
                 {
-                    _tbMessage = value.Trim();
+                    _tbMessage = value;
                     OnPropertyChanged();
                 }
             }
